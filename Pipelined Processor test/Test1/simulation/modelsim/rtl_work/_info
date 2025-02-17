@@ -1,0 +1,1752 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Downloads/CPU integration/Pipelined Processor test/Test1/simulation/modelsim
+Ealu
+Z1 w1734885228
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd
+Z6 FD:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd
+l0
+L6
+VGk1`4akjSVX9?PTPB?XVR2
+!s100 C^:Dc=YlUW5A7aiIziKXG3
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1735215112
+!i10b 1
+Z9 !s108 1735215112.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd|
+Z11 !s107 D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aa_alu
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 Gk1`4akjSVX9?PTPB?XVR2
+l22
+L16
+Vf^b>d>HOzeVSa]X>hP<k?0
+!s100 e>b@39Ykz_8eL378LVkMI3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebranching
+Z14 w1734797790
+R3
+R4
+R0
+Z15 8D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd
+Z16 FD:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd
+l0
+L5
+VI6dAZZ6FYA40OV<_gATQ00
+!s100 UKk2k;>ohoLL2DAoUYgK?3
+R7
+31
+R8
+!i10b 1
+Z17 !s108 1735215111.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd|
+Z19 !s107 D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 9 branching 0 22 I6dAZZ6FYA40OV<_gATQ00
+l24
+L20
+V@`D?H=H5a;_2eeLd`be370
+!s100 f]1R=TojVQR5GT;mQY9k53
+R7
+31
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Eccr
+Z20 w1734896004
+R2
+R3
+R4
+R0
+Z21 8D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd
+Z22 FD:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd
+l0
+L5
+Vj_c[ZIFLHES:IBJc=N`==1
+!s100 SR4zc_j[NNKInLgUF[:h83
+R7
+31
+Z23 !s110 1735215111
+!i10b 1
+R17
+Z24 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd|
+Z25 !s107 D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 ccr 0 22 j_c[ZIFLHES:IBJc=N`==1
+l30
+L26
+Vd`YHN=iRF5dWaP;JV8E4=3
+!s100 gVC;=QaLCM=M<@8F9WJ;z1
+R7
+31
+R23
+!i10b 1
+R17
+R24
+R25
+!i113 1
+R12
+R13
+Econtrol_unit
+Z26 w1735180809
+R2
+R3
+R4
+R0
+Z27 8D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd
+Z28 FD:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd
+l0
+L5
+V=`SDan@A9P:=`GjzfWElZ1
+!s100 8D6jRYA3I;][Sb_A?IEV:0
+R7
+31
+R23
+!i10b 1
+R17
+Z29 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd|
+Z30 !s107 D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd|
+!i113 1
+R12
+R13
+Acontrol_unit_arch
+R2
+R3
+R4
+DEx4 work 12 control_unit 0 22 =`SDan@A9P:=`GjzfWElZ1
+l34
+L33
+VGMdgB3RKnXE;GIlW?RmB82
+!s100 iJ8<?XO8WAlH?<B_iQfEL3
+R7
+31
+R23
+!i10b 1
+R17
+R29
+R30
+!i113 1
+R12
+R13
+Edata_memory
+Z31 w1735031234
+R2
+R3
+R4
+R0
+Z32 8D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd
+Z33 FD:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd
+l0
+L5
+Vaz@<hYbYF=ef1aA=OaUDU3
+!s100 6nhWSEID7n<GCkogk:Hi@0
+R7
+31
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd|
+Z35 !s107 D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd|
+!i113 1
+R12
+R13
+Adata_memory_arch
+R2
+R3
+R4
+DEx4 work 11 data_memory 0 22 az@<hYbYF=ef1aA=OaUDU3
+l27
+L16
+VC;R5ULcdWc<j3YORQdj?<1
+!s100 g<Gzh4SCjF9CnfcPbjJDf1
+R7
+31
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Edecode_cycle
+Z36 w1735136850
+R2
+R3
+R4
+R0
+Z37 8D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd
+Z38 FD:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd
+l0
+L5
+V9j_JIl2fSMhOa;d3KL]GG0
+!s100 P^`E2M2=ZIMIbD<bHJe1]3
+R7
+31
+Z39 !s110 1735215113
+!i10b 1
+Z40 !s108 1735215113.000000
+Z41 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd|
+Z42 !s107 D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd|
+!i113 1
+R12
+R13
+Adecode_cycle_arch
+Z43 DEx4 work 11 or_2_inputs 0 22 @=LeFJJP?j0?YgYzbI5zZ0
+R2
+R3
+R4
+Z44 DEx4 work 12 decode_cycle 0 22 9j_JIl2fSMhOa;d3KL]GG0
+l100
+L45
+Vo=:N?@6i7GRU=cX<2]4Ej3
+!s100 I;V<=R>TJiH?=J^g?1lcZ3
+R7
+31
+R39
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R12
+R13
+Edecodeexecute
+Z45 w1735015707
+R2
+R3
+R4
+R0
+Z46 8D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd
+Z47 FD:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd
+l0
+L8
+VFZCJU=DGEMEg=8d7_52_?2
+!s100 l?mGI=gAAa1fQ_HobB72C1
+R7
+31
+Z48 !s110 1735215110
+!i10b 1
+Z49 !s108 1735215110.000000
+Z50 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd|
+Z51 !s107 D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd|
+!i113 1
+R12
+R13
+Adecodeexecute_arch
+R2
+R3
+R4
+Z52 DEx4 work 13 decodeexecute 0 22 FZCJU=DGEMEg=8d7_52_?2
+l123
+L122
+V3d87XS1i<dRVVMIQHl_:W2
+!s100 [aOf=BG4?8PYDh`Alb=;d1
+R7
+31
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R12
+R13
+Edff_entity
+Z53 w1734279719
+R3
+R4
+R0
+Z54 8D:/Downloads/CPU integration/General Components/DFF_entity.vhd
+Z55 FD:/Downloads/CPU integration/General Components/DFF_entity.vhd
+l0
+L6
+VPcoTLEejAcIdBUH;<E@D?0
+!s100 6aB1D]Rf_>acGnWZNmYQ43
+R7
+31
+Z56 !s110 1735215109
+!i10b 1
+Z57 !s108 1735215109.000000
+Z58 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/DFF_entity.vhd|
+Z59 !s107 D:/Downloads/CPU integration/General Components/DFF_entity.vhd|
+!i113 1
+R12
+R13
+Adff_arch
+R3
+R4
+Z60 DEx4 work 10 dff_entity 0 22 PcoTLEejAcIdBUH;<E@D?0
+l23
+L20
+V`<;=PPJ<5bVF<aBcc6=W<0
+!s100 goF<YLL5<ONDV6]6h^gBZ2
+R7
+31
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 1
+R12
+R13
+Eepc_unit
+Z61 w1735093527
+R2
+R3
+R4
+R0
+Z62 8D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd
+Z63 FD:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd
+l0
+L5
+VgC4^S_>HgN?8n;YcG1oJm1
+!s100 <0XZiQ?lTzdJO2EnO[0V00
+R7
+31
+R23
+!i10b 1
+R17
+Z64 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd|
+Z65 !s107 D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd|
+!i113 1
+R12
+R13
+Aepc_unit_design
+R2
+R3
+R4
+Z66 DEx4 work 8 epc_unit 0 22 gC4^S_>HgN?8n;YcG1oJm1
+l18
+L17
+VWb?J:DkzMFJeDOz@[[c[b0
+!s100 6d5_9>:>d4GVP?KEeXn5J1
+R7
+31
+R23
+!i10b 1
+R17
+R64
+R65
+!i113 1
+R12
+R13
+Eexceptionhandlerfetch
+Z67 w1734950960
+R2
+R3
+R4
+R0
+Z68 8D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd
+Z69 FD:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd
+l0
+L6
+Vo2TJ@]J]764lLWc6480bY2
+!s100 gA7ASEJm;XaJ[J>@d0mfW1
+R7
+31
+R39
+!i10b 1
+R40
+Z70 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd|
+Z71 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd|
+!i113 1
+R12
+R13
+Aexceptionhandlerfetch_arch
+Z72 DEx4 work 11 n_bitsadder 0 22 2U?6fa=cHZUCe;?:MOBBG2
+R2
+R3
+R4
+Z73 DEx4 work 21 exceptionhandlerfetch 0 22 o2TJ@]J]764lLWc6480bY2
+l31
+L26
+V<J<]Z^eH;BRLo[:[J?L8W0
+!s100 3I4JIKWm9b_mjf9K_KCgR0
+R7
+31
+R39
+!i10b 1
+R40
+R70
+R71
+!i113 1
+R12
+R13
+Eexceptionhandlermemory
+Z74 w1735133602
+R2
+R3
+R4
+R0
+Z75 8D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd
+Z76 FD:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd
+l0
+L6
+VIG94Z?9R7Sa<h0ng3[8RT0
+!s100 ehGnPNiJVWRei=19]l<;C0
+R7
+31
+R23
+!i10b 1
+R17
+Z77 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd|
+Z78 !s107 D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd|
+!i113 1
+R12
+R13
+Aexceptionhandlermemory_arch
+R2
+R3
+R4
+Z79 DEx4 work 22 exceptionhandlermemory 0 22 IG94Z?9R7Sa<h0ng3[8RT0
+l35
+L30
+VMPRn96Q:oXONcn>8icHjU3
+!s100 jPJd[Sc9XgKN1N<ACF[i=2
+R7
+31
+R23
+!i10b 1
+R17
+R77
+R78
+!i113 1
+R12
+R13
+Eexe_stage
+Z80 w1735100579
+R3
+R4
+R0
+Z81 8D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd
+Z82 FD:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd
+l0
+L5
+VU:E8nG@@<3gSgnEKLcS[a0
+!s100 zLWOjbGf1:APSE1GH8kYK2
+R7
+31
+R23
+!i10b 1
+R17
+Z83 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd|
+Z84 !s107 D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd|
+!i113 1
+R12
+R13
+Aa_exe_stage
+R3
+R4
+Z85 DEx4 work 9 exe_stage 0 22 U:E8nG@@<3gSgnEKLcS[a0
+l122
+L45
+V9aGIJ;kRJF0GaTLDOhhVQ1
+!s100 f[@IUW[<DK@VB5A4bAaL]3
+R7
+31
+R23
+!i10b 1
+R17
+R83
+R84
+!i113 1
+R12
+R13
+Eexecutememory
+Z86 w1735062415
+R2
+R3
+R4
+R0
+Z87 8D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd
+Z88 FD:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd
+l0
+L8
+VM`oW?HP;<2lPCNEA_bNB=2
+!s100 b5FBCkn[TPWW`@P:hDJU11
+R7
+31
+R48
+!i10b 1
+R49
+Z89 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd|
+Z90 !s107 D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd|
+!i113 1
+R12
+R13
+Aexecutememory_arch
+R2
+R3
+R4
+Z91 DEx4 work 13 executememory 0 22 M`oW?HP;<2lPCNEA_bNB=2
+l95
+L92
+V76Md]FJJ_YkEE?PHCkU2V3
+!s100 ehl41a@GQgYTB_S8=B0`D1
+R7
+31
+R48
+!i10b 1
+R49
+R89
+R90
+!i113 1
+R12
+R13
+Efetchdecode
+Z92 w1734973266
+R2
+R3
+R4
+R0
+Z93 8D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd
+Z94 FD:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd
+l0
+L7
+VTHDCEOJ`flIc?7A=FJUdA0
+!s100 3BdcgBGh3gNRoUbB0I@DZ3
+R7
+31
+R56
+!i10b 1
+R57
+Z95 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd|
+Z96 !s107 D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd|
+!i113 1
+R12
+R13
+Afetchdecode_arch
+R2
+R3
+R4
+Z97 DEx4 work 11 fetchdecode 0 22 THDCEOJ`flIc?7A=FJUdA0
+l49
+L46
+Vj9im7`CkZ<oNYJ=of@n]Z1
+!s100 fiDQdSo1d33?Vkzn1[G:Y2
+R7
+31
+R56
+!i10b 1
+R57
+R95
+R96
+!i113 1
+R12
+R13
+Eflushunit
+Z98 w1735024422
+R2
+R3
+R4
+R0
+Z99 8D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd
+Z100 FD:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd
+l0
+L5
+VfejHF[ADzn05P:>8G:eG62
+!s100 B4`mfKR9BK8LKgVc90DY:1
+R7
+31
+R48
+!i10b 1
+R49
+Z101 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd|
+Z102 !s107 D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd|
+!i113 1
+R12
+R13
+Aflushunit_arch
+R2
+R3
+R4
+Z103 DEx4 work 9 flushunit 0 22 fejHF[ADzn05P:>8G:eG62
+l19
+L18
+V1^FbZ4f0@@a_`^QbD6cU<1
+!s100 lL6_:h[6oF8A9ZV7mgR?o0
+R7
+31
+R48
+!i10b 1
+R49
+R101
+R102
+!i113 1
+R12
+R13
+Ehazardandforwardingunit
+Z104 w1735211962
+R2
+R3
+R4
+R0
+Z105 8D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd
+Z106 FD:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd
+l0
+L5
+V>_m;JWjTC`:I]1KKM=LFW2
+!s100 1CHoC@jMCChOnX>eD4Ni41
+R7
+31
+R48
+!i10b 1
+R49
+Z107 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd|
+Z108 !s107 D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd|
+!i113 1
+R12
+R13
+Ahazardandforwardingunit_arch
+R2
+R3
+R4
+Z109 DEx4 work 23 hazardandforwardingunit 0 22 >_m;JWjTC`:I]1KKM=LFW2
+l45
+L44
+V^_f_0lIbiNm3b_EoQFnD21
+!s100 XDPWW9la9EoPlM1MU^9i31
+R7
+31
+R48
+!i10b 1
+R49
+R107
+R108
+!i113 1
+R12
+R13
+Ehlt_unit
+Z110 w1734869103
+R2
+R3
+R4
+R0
+Z111 8D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd
+Z112 FD:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd
+l0
+L5
+V2WaBo2;f<cO3RbI:M890:0
+!s100 D=8[VR0I9U2inH3nOE78[2
+R7
+31
+R8
+!i10b 1
+R9
+Z113 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd|
+Z114 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd|
+!i113 1
+R12
+R13
+Ahlt_unit_design
+R2
+R3
+R4
+Z115 DEx4 work 8 hlt_unit 0 22 2WaBo2;f<cO3RbI:M890:0
+l15
+L14
+V]1b81I36oRF]k;>R>o6KE1
+!s100 X>MeV4TlKK7mP5U7[5YlM3
+R7
+31
+R8
+!i10b 1
+R9
+R113
+R114
+!i113 1
+R12
+R13
+Eindex_adder
+Z116 w1734942684
+R2
+R3
+R4
+R0
+Z117 8D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd
+Z118 FD:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd
+l0
+L5
+VP95bF:50FVAZjm]GMz>k[0
+!s100 V0Xna3@81LP>IP0jM_^5b0
+R7
+31
+R39
+!i10b 1
+R40
+Z119 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd|
+Z120 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd|
+!i113 1
+R12
+R13
+Aindex_adder_design
+R72
+R2
+R3
+R4
+Z121 DEx4 work 11 index_adder 0 22 P95bF:50FVAZjm]GMz>k[0
+l16
+L15
+VbR5QVeiNH^9<7PFPHNKb62
+!s100 70o@?jCd8fO0o@Vi[bEX[1
+R7
+31
+R39
+!i10b 1
+R40
+R119
+R120
+!i113 1
+R12
+R13
+Einstructionmemory
+Z122 w1735209839
+R2
+Z123 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R3
+R4
+R0
+Z124 8D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd
+Z125 FD:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd
+l0
+L7
+VCfgYB4KdD6:D5CUeS=80Q1
+!s100 AHVWXRC<m;`Nkce7@:Rl62
+R7
+31
+R8
+!i10b 1
+R9
+Z126 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd|
+Z127 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd|
+!i113 1
+R12
+R13
+Ainstructionmemory_arch
+R2
+R123
+R3
+R4
+Z128 DEx4 work 17 instructionmemory 0 22 CfgYB4KdD6:D5CUeS=80Q1
+l46
+L20
+V2Q0_[[iVnmNOh]SH4OM<F2
+!s100 N^9bFFVk81g5IOPOc]Q3h1
+R7
+31
+R8
+!i10b 1
+R9
+R126
+R127
+!i113 1
+R12
+R13
+Eintegeration_fetch
+Z129 w1735120034
+R2
+R3
+R4
+R0
+Z130 8D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd
+Z131 FD:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd
+l0
+L6
+VWBFMQ32G=ORE50T0d<4iC3
+!s100 bTZ?iXjK8cQlZ9Rblgde41
+R7
+31
+Z132 !s110 1735215114
+!i10b 1
+Z133 !s108 1735215114.000000
+Z134 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd|
+Z135 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd|
+!i113 1
+R12
+R13
+Aintegeration_fetch_arch
+R73
+R60
+Z136 DEx4 work 12 threeinputor 0 22 i;>meCJn3n:7E`Z;TZN:;1
+R115
+R121
+Z137 DEx4 work 8 mux_2to1 0 22 Rd6fIcB^8kQS_BFk_:z?Q1
+R43
+Z138 DEx4 work 2 pc 0 22 EIQI=Z:a>`WFUT1LnYdo40
+Z139 DEx4 work 8 pc_adder 0 22 DSBnjL6neKnWkZ^iCG`?g1
+Z140 DEx4 work 8 mux_4to1 0 22 Zb`Oh4fB]gVG2<Pd^T=3W1
+R123
+R128
+R2
+R3
+R4
+Z141 DEx4 work 18 integeration_fetch 0 22 WBFMQ32G=ORE50T0d<4iC3
+l73
+L44
+V_VOhTI[FZL8mE7KTWB^o81
+!s100 NS1AEj>2`KZ`a3E^1L`bo0
+R7
+31
+R132
+!i10b 1
+R133
+R134
+R135
+!i113 1
+R12
+R13
+Ememory_cycle
+Z142 w1735142882
+R2
+R3
+R4
+R0
+Z143 8D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd
+Z144 FD:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd
+l0
+L5
+V5lZib0XBLRKDWU_c@kQ8c1
+!s100 =gW:]HQ@ALY[1D]C2DY343
+R7
+31
+R8
+!i10b 1
+R9
+Z145 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd|
+Z146 !s107 D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd|
+!i113 1
+R12
+R13
+Amemory_cycle_arch
+R2
+R3
+R4
+Z147 DEx4 work 12 memory_cycle 0 22 5lZib0XBLRKDWU_c@kQ8c1
+l82
+L28
+V462b??:Of4K<G=nU_TnW;1
+!s100 MXzD`4QFXjZOT;;2c=eM^2
+R7
+31
+R8
+!i10b 1
+R9
+R145
+R146
+!i113 1
+R12
+R13
+Ememorywriteback
+Z148 w1735116557
+R2
+R3
+R4
+R0
+Z149 8D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd
+Z150 FD:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd
+l0
+L8
+VkW08>KiXON:2lNdclP3kG3
+!s100 e:;SKB>4PzXbnS`N:K;541
+R7
+31
+R56
+!i10b 1
+R57
+Z151 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd|
+Z152 !s107 D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd|
+!i113 1
+R12
+R13
+Amemorywriteback_arch
+R2
+R3
+R4
+Z153 DEx4 work 15 memorywriteback 0 22 kW08>KiXON:2lNdclP3kG3
+l74
+L71
+VWh8GTVE93HN0KMCE0iIEF1
+!s100 _bKFfGRCLLZ3_o:gdiCM21
+R7
+31
+R56
+!i10b 1
+R57
+R151
+R152
+!i113 1
+R12
+R13
+Emux2to1_16bits
+Z154 w1735100725
+R2
+R3
+R4
+R0
+Z155 8D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd
+Z156 FD:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd
+l0
+L6
+V5UgMLG85`Kh;83K5BNSmo2
+!s100 7<jF64ChjIE6F3M3W_6XA3
+R7
+31
+Z157 !s110 1735215108
+!i10b 1
+Z158 !s108 1735215108.000000
+Z159 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd|
+Z160 !s107 D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 14 mux2to1_16bits 0 22 5UgMLG85`Kh;83K5BNSmo2
+l18
+L17
+V;?Zi1fYZnWbXj3C9LX6Pg2
+!s100 K@9PHHTXGSbG0`f^dlM0V2
+R7
+31
+R157
+!i10b 1
+R158
+R159
+R160
+!i113 1
+R12
+R13
+Emux3to1
+Z161 w1734385676
+R3
+R4
+R0
+Z162 8D:/Downloads/CPU integration/General Components/MUX3to1.vhd
+Z163 FD:/Downloads/CPU integration/General Components/MUX3to1.vhd
+l0
+L4
+VaHfhYN:b6J3=Y47`XAcc:2
+!s100 Mhd71<jHgFVXeoScb=F:;3
+R7
+31
+R56
+!i10b 1
+R57
+Z164 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/MUX3to1.vhd|
+Z165 !s107 D:/Downloads/CPU integration/General Components/MUX3to1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 7 mux3to1 0 22 aHfhYN:b6J3=Y47`XAcc:2
+l15
+L14
+VLRcPM?j29EcV]6Q]hQbl61
+!s100 U7nICTlE31lmI21Do;T>G0
+R7
+31
+R56
+!i10b 1
+R57
+R164
+R165
+!i113 1
+R12
+R13
+Emux3to1_16bits
+Z166 w1734723521
+R3
+R4
+R0
+Z167 8D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd
+Z168 FD:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd
+l0
+L4
+ViH[ZDea3V6jI25EDYb:2_3
+!s100 [iV;3o>XV6Klc=X9[ZT[V2
+R7
+31
+R56
+!i10b 1
+R57
+Z169 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd|
+Z170 !s107 D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd|
+!i113 1
+R12
+R13
+Amux3to1_16bits_arch
+R3
+R4
+DEx4 work 14 mux3to1_16bits 0 22 iH[ZDea3V6jI25EDYb:2_3
+l15
+L14
+VDfO_634RPDPL0bA_czF@D3
+!s100 `OePDPgBMcl_9hkc9;mmd0
+R7
+31
+R56
+!i10b 1
+R57
+R169
+R170
+!i113 1
+R12
+R13
+Emux_2to1
+Z171 w1734183264
+R2
+R3
+R4
+R0
+Z172 8D:/Downloads/CPU integration/General Components/MUX_2to1.vhd
+Z173 FD:/Downloads/CPU integration/General Components/MUX_2to1.vhd
+l0
+L6
+VRd6fIcB^8kQS_BFk_:z?Q1
+!s100 aAgJlgPF3:i6S^`VnI02O1
+R7
+31
+R56
+!i10b 1
+R57
+Z174 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/MUX_2to1.vhd|
+Z175 !s107 D:/Downloads/CPU integration/General Components/MUX_2to1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+R137
+l18
+L17
+V3PAmkPX2LRR=W;gmBLJ3X3
+!s100 U]@]^TBAg6HddPFf4GQB22
+R7
+31
+R56
+!i10b 1
+R57
+R174
+R175
+!i113 1
+R12
+R13
+Emux_4to1
+Z176 w1735119497
+R2
+R3
+R4
+R0
+Z177 8D:/Downloads/CPU integration/General Components/MUX4to1.vhd
+Z178 FD:/Downloads/CPU integration/General Components/MUX4to1.vhd
+l0
+L5
+VZb`Oh4fB]gVG2<Pd^T=3W1
+!s100 7kQdUWmW@MhK>lI3DBDP90
+R7
+31
+R157
+!i10b 1
+R158
+Z179 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/MUX4to1.vhd|
+Z180 !s107 D:/Downloads/CPU integration/General Components/MUX4to1.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+R140
+l17
+L16
+V6:oW^=zo]jT7TcL_;e>;40
+!s100 10ZTzBz>BV[@baQ1JPi?D2
+R7
+31
+R157
+!i10b 1
+R158
+R179
+R180
+!i113 1
+R12
+R13
+En_bitsadder
+Z181 w1734183257
+R3
+R4
+R0
+Z182 8D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd
+Z183 FD:/Downloads/CPU integration/General Components/n_BitsAdder.vhd
+l0
+L5
+V2U?6fa=cHZUCe;?:MOBBG2
+!s100 <SmklzINT8R7G=Qzh>mB03
+R7
+31
+R39
+!i10b 1
+R40
+Z184 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd|
+Z185 !s107 D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd|
+!i113 1
+R12
+R13
+An_bitsadder_arch
+Z186 DEx4 work 11 onebitadder 0 22 <DHO57YOUCzU]ja`XLkBJ1
+R3
+R4
+R72
+l27
+L24
+V^MNBQFIQP01g?N:<I:N6U1
+!s100 k3_hJJ_LlTabh2jCSD9JG0
+R7
+31
+R39
+!i10b 1
+R40
+R184
+R185
+!i113 1
+R12
+R13
+Eonebitadder
+Z187 w1728543324
+R3
+R4
+R0
+Z188 8D:/Downloads/CPU integration/General Components/oneBitAdder.vhd
+Z189 FD:/Downloads/CPU integration/General Components/oneBitAdder.vhd
+l0
+L5
+V<DHO57YOUCzU]ja`XLkBJ1
+!s100 KdJbbIV1_olf2fI^fPMMD0
+R7
+31
+R56
+!i10b 1
+R57
+Z190 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/oneBitAdder.vhd|
+Z191 !s107 D:/Downloads/CPU integration/General Components/oneBitAdder.vhd|
+!i113 1
+R12
+R13
+Aonebitadder_arch
+R3
+R4
+R186
+l15
+L13
+VU=QinmPU`jn0WCQ9?dj<L2
+!s100 `58EBF^GSeiIR8bz=zFM_2
+R7
+31
+R56
+!i10b 1
+R57
+R190
+R191
+!i113 1
+R12
+R13
+Eor_2_inputs
+Z192 w1734278908
+R2
+R3
+R4
+R0
+Z193 8D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd
+Z194 FD:/Downloads/CPU integration/General Components/OR_2_inputs.vhd
+l0
+L6
+V@=LeFJJP?j0?YgYzbI5zZ0
+!s100 hmigd3YShX>bRQ5hKfK[62
+R7
+31
+R157
+!i10b 1
+R158
+Z195 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd|
+Z196 !s107 D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+R43
+l16
+L15
+VD5GbLSm=C2KK>dE`PULe@2
+!s100 U7oZP>DfgjhDXh]SlCNS[0
+R7
+31
+R157
+!i10b 1
+R158
+R195
+R196
+!i113 1
+R12
+R13
+Eor_5
+Z197 w1735043973
+R3
+R4
+R0
+Z198 8D:/Downloads/CPU integration/General Components/OR_5.vhd
+Z199 FD:/Downloads/CPU integration/General Components/OR_5.vhd
+l0
+L4
+V069XNVH3el0[:69O]BB^F1
+!s100 mOJdMi@Aj5LJ<Kn9[iH^N0
+R7
+31
+R157
+!i10b 1
+R158
+Z200 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/OR_5.vhd|
+Z201 !s107 D:/Downloads/CPU integration/General Components/OR_5.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+Z202 DEx4 work 4 or_5 0 22 069XNVH3el0[:69O]BB^F1
+l12
+L11
+Vi`^=NRKn0TBkTVPdl9cLX0
+!s100 Zka?^27H@iJa_Yz?HNf`92
+R7
+31
+R157
+!i10b 1
+R158
+R200
+R201
+!i113 1
+R12
+R13
+Epc
+Z203 w1734942156
+R2
+R3
+R4
+R0
+Z204 8D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd
+Z205 FD:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd
+l0
+L5
+VEIQI=Z:a>`WFUT1LnYdo40
+!s100 eY?HF7Wd;kNiPYW@BFK:R0
+R7
+31
+R8
+!i10b 1
+R9
+Z206 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd|
+Z207 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd|
+!i113 1
+R12
+R13
+Apc_design
+R2
+R3
+R4
+R138
+l14
+L13
+V5ngQIJl;aIgCb4=OAfN<>3
+!s100 [F4LVAQJC0fN0z]N0[A^S2
+R7
+31
+R8
+!i10b 1
+R9
+R206
+R207
+!i113 1
+R12
+R13
+Epc_adder
+Z208 w1734942380
+R2
+R3
+R4
+R0
+Z209 8D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd
+Z210 FD:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd
+l0
+L5
+VDSBnjL6neKnWkZ^iCG`?g1
+!s100 Q7D4<ClIO1WH9GXIa=NCl2
+R7
+31
+R39
+!i10b 1
+R40
+Z211 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd|
+Z212 !s107 D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd|
+!i113 1
+R12
+R13
+Apc_adder_design
+R72
+R2
+R3
+R4
+R139
+l16
+L15
+V40G6SY`ij8lPd3^[;a`S02
+!s100 =7MWH>eLGU:l`<FN;5obC1
+R7
+31
+R39
+!i10b 1
+R40
+R211
+R212
+!i113 1
+R12
+R13
+Epc_one_adder
+Z213 w1734641849
+R2
+R3
+R4
+R0
+Z214 8D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd
+Z215 FD:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd
+l0
+L5
+VgHOJX`6cOFX>X:fIn;F;N2
+!s100 B1JRLI<1K?I?KZ?R4J][62
+R7
+31
+R39
+!i10b 1
+R40
+Z216 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd|
+Z217 !s107 D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd|
+!i113 1
+R12
+R13
+Apc_one_adder_arch
+R72
+R2
+R3
+R4
+DEx4 work 12 pc_one_adder 0 22 gHOJX`6cOFX>X:fIn;F;N2
+l16
+L15
+VR>S`FPRdkkfJ=_Th4kCcN3
+!s100 dmeNK`1<FR=38i^l<ROmK1
+R7
+31
+R39
+!i10b 1
+R40
+R216
+R217
+!i113 1
+R12
+R13
+Epipelinedprocessor
+Z218 w1735208083
+R2
+R3
+R4
+R0
+Z219 8D:/Downloads/CPU integration/PipelinedProcessor.vhd
+Z220 FD:/Downloads/CPU integration/PipelinedProcessor.vhd
+l0
+L5
+VgVUlQSFOF8^O2mbfEUN992
+!s100 h``[e_ImPQP]<GTE=N;GS3
+R7
+31
+R132
+!i10b 1
+R133
+Z221 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/PipelinedProcessor.vhd|
+Z222 !s107 D:/Downloads/CPU integration/PipelinedProcessor.vhd|
+!i113 1
+R12
+R13
+Apipelinedprocessor_arch
+R137
+R202
+R43
+R153
+R91
+R52
+R97
+R66
+R79
+R109
+R103
+Z223 DEx4 work 14 predictionunit 0 22 gfASa?XRARhG1z49W0=0h2
+Z224 DEx4 work 8 ret_unit 0 22 KjM3<@][H=1zR=1Ve6UDc1
+Z225 DEx4 work 15 writeback_value 0 22 78Z]96[2SdXi77n49XBM@0
+Z226 DEx4 work 16 write_back_cycle 0 22 KWFeHAKe[DK>;dPIoXeH61
+R147
+R85
+R44
+R141
+R2
+R3
+R4
+DEx4 work 18 pipelinedprocessor 0 22 gVUlQSFOF8^O2mbfEUN992
+l242
+L21
+VboAz[>aQ92n`eMi=Vjd0h2
+!s100 i=NUnRDIEdVTA_I=hPMed2
+R7
+31
+R132
+!i10b 1
+R133
+R221
+R222
+!i113 1
+R12
+R13
+Epredictionunit
+Z227 w1735049580
+R2
+R3
+R4
+R0
+Z228 8D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd
+Z229 FD:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd
+l0
+L5
+VgfASa?XRARhG1z49W0=0h2
+!s100 e@@4lTg[FEH@eVSR:N4Mi3
+R7
+31
+R48
+!i10b 1
+R49
+Z230 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd|
+Z231 !s107 D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd|
+!i113 1
+R12
+R13
+Apredictionunit_arch
+R2
+R3
+R4
+R223
+l15
+L14
+V?Zh^L7Nn:Bg]Z`1f1XQ9b0
+!s100 blkTO1<A[XKK@;ET6h8`G3
+R7
+31
+R48
+!i10b 1
+R49
+R230
+R231
+!i113 1
+R12
+R13
+Ereg_file
+Z232 w1735205988
+R2
+R3
+R4
+R0
+Z233 8D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd
+Z234 FD:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd
+l0
+L5
+V6=z]75b_dS@Rnal`_^k]H1
+!s100 z]BaSEWFQPQWldA3CTb8Z0
+R7
+31
+R23
+!i10b 1
+R17
+Z235 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd|
+Z236 !s107 D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd|
+!i113 1
+R12
+R13
+Aarch_reg_file
+R2
+R3
+R4
+DEx4 work 8 reg_file 0 22 6=z]75b_dS@Rnal`_^k]H1
+l22
+L19
+VWYlN`Lj5m`8JhBWgYkhQ53
+!s100 ]Nm7C[<?kcz0ZU2>aedEF2
+R7
+31
+R23
+!i10b 1
+R17
+R235
+R236
+!i113 1
+R12
+R13
+Eret_unit
+Z237 w1735024025
+R2
+R3
+R4
+R0
+Z238 8D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd
+Z239 FD:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd
+l0
+L5
+VKjM3<@][H=1zR=1Ve6UDc1
+!s100 ;5i8Z>iW1O<KIIX_Y3ee:1
+R7
+31
+R48
+!i10b 1
+R49
+Z240 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd|
+Z241 !s107 D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd|
+!i113 1
+R12
+R13
+Aret_unit_arch
+R2
+R3
+R4
+R224
+l17
+L16
+V>oI>[f2a_zIjZMY7>2YS72
+!s100 dnK_8`WmE8]B^QL4B>Tkg2
+R7
+31
+R48
+!i10b 1
+R49
+R240
+R241
+!i113 1
+R12
+R13
+Esp_adder_unit
+Z242 w1735123053
+R2
+R3
+R4
+R0
+Z243 8D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd
+Z244 FD:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd
+l0
+L5
+VbKbH5eE[O^>9E3_G6[hAH0
+!s100 AXCjGh?@0AN85N1A]P2K=3
+R7
+31
+R132
+!i10b 1
+R133
+Z245 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd|
+Z246 !s107 D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd|
+!i113 1
+R12
+R13
+Asp_adder_unit_arch
+R72
+R2
+R3
+R4
+DEx4 work 13 sp_adder_unit 0 22 bKbH5eE[O^>9E3_G6[hAH0
+l21
+L17
+VJ5O^U`CiKd8Z;ed`O_UCn0
+!s100 1fkZohTMWm?mNG10nLBW^3
+R7
+31
+R132
+!i10b 1
+R133
+R245
+R246
+!i113 1
+R12
+R13
+Ethreeinputor
+Z247 w1734863615
+R3
+R4
+R0
+Z248 8D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd
+Z249 FD:/Downloads/CPU integration/General Components/ThreeInputOR.vhd
+l0
+L5
+Vi;>meCJn3n:7E`Z;TZN:;1
+!s100 1eN96LLSDVTo`d6F@`6FV2
+R7
+31
+R157
+!i10b 1
+R158
+Z250 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd|
+Z251 !s107 D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+R136
+l16
+L15
+VJUh0hIT4a[7@_;9b47W8[2
+!s100 lgg_G`o6XV[KW5V]_2fKa0
+R7
+31
+R157
+!i10b 1
+R158
+R250
+R251
+!i113 1
+R12
+R13
+Ewrite_back_cycle
+Z252 w1735116679
+R3
+R4
+R0
+Z253 8D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd
+Z254 FD:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd
+l0
+L4
+VKWFeHAKe[DK>;dPIoXeH61
+!s100 :;l6jfZP?VfNO1>XaiXGZ2
+R7
+31
+R39
+!i10b 1
+R40
+Z255 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd|
+Z256 !s107 D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd|
+!i113 1
+R12
+R13
+Awrite_back_cycle_arch
+R3
+R4
+R226
+l16
+L15
+V_zbUYDJe]zFIM_zY;a3[e3
+!s100 ]N4`[CL;njo]Y0ba]j>2K3
+R7
+31
+R39
+!i10b 1
+R40
+R255
+R256
+!i113 1
+R12
+R13
+Ewriteback_value
+Z257 w1735036597
+R2
+R3
+R4
+R0
+Z258 8D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd
+Z259 FD:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd
+l0
+L6
+V78Z]96[2SdXi77n49XBM@0
+!s100 1U6Qia9c:TePkNWEEE_kS2
+R7
+31
+R48
+!i10b 1
+R49
+Z260 !s90 -reportprogress|300|-93|-work|work|D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd|
+Z261 !s107 D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd|
+!i113 1
+R12
+R13
+Awriteback_value_arch
+R2
+R3
+R4
+R225
+l19
+L17
+VUVQPfcC=Bm_dmoz8?_6T52
+!s100 zPLF=:Rd<<3HO8EU_bR<41
+R7
+31
+R48
+!i10b 1
+R49
+R260
+R261
+!i113 1
+R12
+R13

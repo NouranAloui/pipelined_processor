@@ -1,0 +1,654 @@
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do test_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/MUX4to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:48 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/MUX4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_4to1
+# -- Compiling architecture Behavioral of MUX_4to1
+# End time: 14:11:48 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:48 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX2to1_16bits
+# -- Compiling architecture Behavioral of MUX2to1_16bits
+# End time: 14:11:48 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:48 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ThreeInputOR
+# -- Compiling architecture Behavioral of ThreeInputOR
+# End time: 14:11:48 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/OR_5.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:48 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/OR_5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity OR_5
+# -- Compiling architecture Behavioral of OR_5
+# End time: 14:11:48 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:48 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity OR_2_inputs
+# -- Compiling architecture Behavioral of OR_2_inputs
+# End time: 14:11:48 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/oneBitAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/oneBitAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity oneBitAdder
+# -- Compiling architecture oneBitAdder_Arch of oneBitAdder
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX3to1_16bits
+# -- Compiling architecture MUX3to1_16bits_arch of MUX3to1_16bits
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/MUX3to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/MUX3to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX3to1
+# -- Compiling architecture Behavioral of MUX3to1
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/MUX_2to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/MUX_2to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MUX_2to1
+# -- Compiling architecture Behavioral of MUX_2to1
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/DFF_entity.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/DFF_entity.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DFF_entity
+# -- Compiling architecture DFF_Arch of DFF_entity
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity MemoryWriteBack
+# -- Compiling architecture MemoryWriteBack_Arch of MemoryWriteBack
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:49 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FetchDecode
+# -- Compiling architecture FetchDecode_Arch of FetchDecode
+# End time: 14:11:49 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ExecuteMemory
+# -- Compiling architecture ExecuteMemory_Arch of ExecuteMemory
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DecodeExecute
+# -- Compiling architecture DecodeExecute_Arch of DecodeExecute
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity WriteBack_Value
+# -- Compiling architecture WriteBack_Value_Arch of WriteBack_Value
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity RET_unit
+# -- Compiling architecture RET_unit_Arch of RET_unit
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PredictionUnit
+# -- Compiling architecture PredictionUnit_Arch of PredictionUnit
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity HazardAndForwardingUnit
+# -- Compiling architecture HazardAndForwardingUnit_Arch of HazardAndForwardingUnit
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:50 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FlushUnit
+# -- Compiling architecture FlushUnit_Arch of FlushUnit
+# End time: 14:11:50 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ExceptionHandlerMemory
+# -- Compiling architecture ExceptionHandlerMemory_Arch of ExceptionHandlerMemory
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity EPC_Unit
+# -- Compiling architecture EPC_Unit_design of EPC_Unit
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Reg_File
+# -- Compiling architecture Arch_Reg_File of Reg_File
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Control_Unit
+# -- Compiling architecture Control_Unit_arch of Control_Unit
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity EXE_STAGE
+# -- Compiling architecture A_EXE_STAGE of EXE_STAGE
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity CCR
+# -- Compiling architecture Behavioral of CCR
+# End time: 14:11:51 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:51 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Branching
+# -- Compiling architecture Behavioral of Branching
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ALU
+# -- Compiling architecture A_ALU of ALU
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture PC_design of PC
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package NUMERIC_STD
+# -- Compiling entity InstructionMemory
+# -- Compiling architecture InstructionMemory_Arch of InstructionMemory
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity HLT_unit
+# -- Compiling architecture HLT_unit_design of HLT_unit
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_cycle
+# -- Compiling architecture memory_cycle_arch of memory_cycle
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:52 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Data_Memory
+# -- Compiling architecture Data_Memory_arch of Data_Memory
+# End time: 14:11:52 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity write_back_cycle
+# -- Compiling architecture write_back_cycle_arch of write_back_cycle
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity n_BitsAdder
+# -- Compiling architecture n_BitsAdder_Arch of n_BitsAdder
+# -- Loading entity oneBitAdder
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity decode_cycle
+# -- Compiling architecture decode_cycle_arch of decode_cycle
+# -- Loading entity OR_2_inputs
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pc_one_adder
+# -- Compiling architecture pc_one_adder_arch of pc_one_adder
+# -- Loading entity n_BitsAdder
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity pc_adder
+# -- Compiling architecture PC_adder_design of pc_adder
+# -- Loading entity n_BitsAdder
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity index_adder
+# -- Compiling architecture index_adder_design of index_adder
+# -- Loading entity n_BitsAdder
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:53 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ExceptionHandlerFetch
+# -- Compiling architecture ExceptionHandlerFetch_Arch of ExceptionHandlerFetch
+# -- Loading entity n_BitsAdder
+# End time: 14:11:53 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:54 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity SP_adder_unit
+# -- Compiling architecture SP_adder_unit_arch of SP_adder_unit
+# -- Loading entity n_BitsAdder
+# End time: 14:11:54 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:54 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Integeration_Fetch
+# -- Compiling architecture Integeration_Fetch_arch of Integeration_Fetch
+# -- Loading package std_logic_textio
+# -- Loading entity InstructionMemory
+# -- Loading entity MUX_4to1
+# -- Loading entity pc_adder
+# -- Loading entity PC
+# -- Loading entity OR_2_inputs
+# -- Loading entity MUX_2to1
+# -- Loading entity index_adder
+# -- Loading entity HLT_unit
+# -- Loading entity ThreeInputOR
+# -- Loading entity DFF_entity
+# -- Loading entity ExceptionHandlerFetch
+# End time: 14:11:54 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Downloads/CPU integration/PipelinedProcessor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:11:54 on Dec 26,2024
+# vcom -reportprogress 300 -93 -work work D:/Downloads/CPU integration/PipelinedProcessor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PipelinedProcessor
+# -- Compiling architecture PipelinedProcessor_Arch of PipelinedProcessor
+# -- Loading entity Integeration_Fetch
+# -- Loading entity decode_cycle
+# -- Loading entity EXE_STAGE
+# -- Loading entity memory_cycle
+# -- Loading entity write_back_cycle
+# -- Loading entity WriteBack_Value
+# -- Loading entity RET_unit
+# -- Loading entity PredictionUnit
+# -- Loading entity FlushUnit
+# -- Loading entity HazardAndForwardingUnit
+# -- Loading entity ExceptionHandlerMemory
+# -- Loading entity EPC_Unit
+# -- Loading entity FetchDecode
+# -- Loading entity DecodeExecute
+# -- Loading entity ExecuteMemory
+# -- Loading entity MemoryWriteBack
+# -- Loading entity OR_2_inputs
+# -- Loading entity OR_5
+# -- Loading entity MUX_2to1
+# End time: 14:11:54 on Dec 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.pipelinedprocessor
+# vsim work.pipelinedprocessor 
+# Start time: 14:12:01 on Dec 26,2024
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.pipelinedprocessor(pipelinedprocessor_arch)
+# Loading ieee.std_logic_textio(body)
+# Loading work.integeration_fetch(integeration_fetch_arch)
+# Loading work.instructionmemory(instructionmemory_arch)
+# Loading work.mux_4to1(behavioral)
+# Loading work.pc_adder(pc_adder_design)
+# Loading work.n_bitsadder(n_bitsadder_arch)
+# Loading work.onebitadder(onebitadder_arch)
+# Loading work.pc(pc_design)
+# Loading work.or_2_inputs(behavioral)
+# Loading work.mux_2to1(behavioral)
+# Loading work.index_adder(index_adder_design)
+# Loading work.hlt_unit(hlt_unit_design)
+# Loading work.threeinputor(behavioral)
+# Loading work.dff_entity(dff_arch)
+# Loading work.exceptionhandlerfetch(exceptionhandlerfetch_arch)
+# Loading work.decode_cycle(decode_cycle_arch)
+# Loading work.control_unit(control_unit_arch)
+# Loading work.reg_file(arch_reg_file)
+# Loading work.pc_one_adder(pc_one_adder_arch)
+# Loading work.exe_stage(a_exe_stage)
+# Loading work.mux2to1_16bits(behavioral)
+# Loading work.mux3to1(behavioral)
+# Loading work.alu(a_alu)
+# Loading work.ccr(behavioral)
+# Loading work.branching(behavioral)
+# Loading work.memory_cycle(memory_cycle_arch)
+# Loading work.data_memory(data_memory_arch)
+# Loading work.mux3to1_16bits(mux3to1_16bits_arch)
+# Loading work.sp_adder_unit(sp_adder_unit_arch)
+# Loading work.write_back_cycle(write_back_cycle_arch)
+# Loading work.writeback_value(writeback_value_arch)
+# Loading work.ret_unit(ret_unit_arch)
+# Loading work.predictionunit(predictionunit_arch)
+# Loading work.flushunit(flushunit_arch)
+# Loading work.hazardandforwardingunit(hazardandforwardingunit_arch)
+# Loading work.exceptionhandlermemory(exceptionhandlermemory_arch)
+# Loading work.epc_unit(epc_unit_design)
+# Loading work.fetchdecode(fetchdecode_arch)
+# Loading work.decodeexecute(decodeexecute_arch)
+# Loading work.executememory(executememory_arch)
+# Loading work.memorywriteback(memorywriteback_arch)
+# Loading work.or_5(behavioral)
+add wave -position insertpoint sim:/pipelinedprocessor/*
+force -freeze sim:/pipelinedprocessor/clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pipelinedprocessor/reset 1 0
+force -freeze sim:/pipelinedprocessor/IN_PORT ffff 0
+# Value length (4) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: ffff 0.
+# 
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Memory_Stage/DM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Memory_Stage/DM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Decode_Stage/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Decode_Stage/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Fetch_Stage/InstructionMemory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Fetch_Stage/InstructionMemory
+restart -f
+add wave -position insertpoint sim:/pipelinedprocessor/*
+force -freeze sim:/pipelinedprocessor/clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pipelinedprocessor/reset 1 0
+force -freeze sim:/pipelinedprocessor/IN_PORT ffff 0
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Memory_Stage/DM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Memory_Stage/DM
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Decode_Stage/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Decode_Stage/RF
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Fetch_Stage/InstructionMemory
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /pipelinedprocessor/Fetch_Stage/InstructionMemory
+force -freeze sim:/pipelinedprocessor/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 14:22:46 on Dec 26,2024, Elapsed time: 0:10:45
+# Errors: 1, Warnings: 12

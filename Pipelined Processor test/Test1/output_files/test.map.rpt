@@ -1,0 +1,1039 @@
+Analysis & Elaboration report for test
+Mon Feb 10 17:17:11 2025
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |PipelinedProcessor
+  5. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage
+  6. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|InstructionMemory:InstructionMemory
+  7. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_4to1:MUX4to1_pc_inc_1_or_2_or_0
+  8. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc
+  9. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding
+ 10. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Lastone
+ 11. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|index_adder:Adding_index
+ 12. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|index_adder:Adding_index|n_BitsAdder:Adding
+ 13. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_PCincrement_or_IMofAddress
+ 14. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_previousMUX_or_branchAddress
+ 15. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception
+ 16. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception_or_previousMUXorBranchAddress
+ 17. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_DMofSP_or_previousMUX
+ 18. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler
+ 19. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding1
+ 20. Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding2
+ 21. Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage
+ 22. Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|Reg_File:RF
+ 23. Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|pc_one_adder:PC_inc
+ 24. Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|pc_one_adder:PC_inc|n_BitsAdder:Adding
+ 25. Parameter Settings for User Entity Instance: EXE_STAGE:Execute_Stage|MUX2to1_16bits:MUX_EXE1
+ 26. Parameter Settings for User Entity Instance: EXE_STAGE:Execute_Stage|MUX2to1_16bits:MUX_EXE2
+ 27. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage
+ 28. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|MUX_2to1:INT_MUX
+ 29. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|MUX_2to1:WRITEDATA_MUX
+ 30. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|Data_Memory:DM
+ 31. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|SP_adder_unit:SP
+ 32. Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|SP_adder_unit:SP|n_BitsAdder:adder_inst
+ 33. Parameter Settings for User Entity Instance: HazardAndForwardingUnit:Hazard_and_Forwarding_Unit
+ 34. Parameter Settings for User Entity Instance: ExceptionHandlerMemory:Exception_Handler_Memory_Unit
+ 35. Parameter Settings for User Entity Instance: FetchDecode:FetchDecodeBuffer
+ 36. Parameter Settings for User Entity Instance: DecodeExecute:DecodeExecuteBuffer
+ 37. Parameter Settings for User Entity Instance: ExecuteMemory:ExecuteMemory_Buffer
+ 38. Parameter Settings for User Entity Instance: MemoryWriteBack:MemoryWriteBack_Buffer
+ 39. Parameter Settings for User Entity Instance: MUX_2to1:MUX_to_choose_bet_Rdst_and_Rsrc1
+ 40. Analysis & Elaboration Settings
+ 41. Port Connectivity Checks: "OR_2_inputs:ORing_to_reset_control_signals"
+ 42. Port Connectivity Checks: "OR_2_inputs:ORing_the_reset_and_flush_of_MW_buffer"
+ 43. Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_EM_buffer"
+ 44. Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_DE_buffer"
+ 45. Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_FD_buffer"
+ 46. Port Connectivity Checks: "MemoryWriteBack:MemoryWriteBack_Buffer"
+ 47. Port Connectivity Checks: "ExecuteMemory:ExecuteMemory_Buffer"
+ 48. Port Connectivity Checks: "DecodeExecute:DecodeExecuteBuffer"
+ 49. Port Connectivity Checks: "EPC_Unit:EPC_Unit"
+ 50. Port Connectivity Checks: "memory_cycle:Memory_Stage|SP_adder_unit:SP|n_BitsAdder:adder_inst"
+ 51. Port Connectivity Checks: "decode_cycle:Decode_Stage|pc_one_adder:PC_inc|n_BitsAdder:Adding"
+ 52. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding2"
+ 53. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding1"
+ 54. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception"
+ 55. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|index_adder:Adding_index|n_BitsAdder:Adding"
+ 56. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding"
+ 57. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|MUX_4to1:MUX4to1_pc_inc_1_or_2_or_0"
+ 58. Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage"
+ 59. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Mon Feb 10 17:17:11 2025       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; test                                        ;
+; Top-level Entity Name         ; PipelinedProcessor                          ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |PipelinedProcessor ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; WIDTH_12       ; 12    ; Signed Integer                                            ;
+; OpCodeWidth    ; 5     ; Signed Integer                                            ;
+; AddressWidth   ; 3     ; Signed Integer                                            ;
+; WIDTH_16       ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; width_12       ; 12    ; Signed Integer                                     ;
+; width_16       ; 16    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|InstructionMemory:InstructionMemory ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; addresswidth   ; 12    ; Signed Integer                                                                         ;
+; wordwidth      ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_4to1:MUX4to1_pc_inc_1_or_2_or_0 ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                   ;
++----------------+-------+----------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc ;
++----------------+-------+-----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                  ;
++----------------+-------+-----------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                        ;
++----------------+-------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Lastone ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|index_adder:Adding_index ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|index_adder:Adding_index|n_BitsAdder:Adding ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_PCincrement_or_IMofAddress ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_previousMUX_or_branchAddress ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                   ;
++----------------+-------+--------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception_or_previousMUXorBranchAddress ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                              ;
++----------------+-------+-------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_DMofSP_or_previousMUX ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                      ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; width_16       ; 16    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding1 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding2 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                           ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                                                 ;
++----------------+-------+----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; width          ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|Reg_File:RF ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; address_bits   ; 3     ; Signed Integer                                            ;
+; data_bits      ; 16    ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|pc_one_adder:PC_inc ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: decode_cycle:Decode_Stage|pc_one_adder:PC_inc|n_BitsAdder:Adding ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE_STAGE:Execute_Stage|MUX2to1_16bits:MUX_EXE1 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXE_STAGE:Execute_Stage|MUX2to1_16bits:MUX_EXE2 ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; WIDTH          ; 16    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; width          ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|MUX_2to1:INT_MUX ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|MUX_2to1:WRITEDATA_MUX ;
++----------------+-------+----------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                 ;
++----------------+-------+----------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                       ;
++----------------+-------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|Data_Memory:DM ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|SP_adder_unit:SP ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory_cycle:Memory_Stage|SP_adder_unit:SP|n_BitsAdder:adder_inst ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; width          ; 16    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: HazardAndForwardingUnit:Hazard_and_Forwarding_Unit ;
++----------------------+-------+------------------------------------------------------------------+
+; Parameter Name       ; Value ; Type                                                             ;
++----------------------+-------+------------------------------------------------------------------+
+; registeradrres_width ; 3     ; Signed Integer                                                   ;
++----------------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ExceptionHandlerMemory:Exception_Handler_Memory_Unit ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; pc_width       ; 16    ; Signed Integer                                                           ;
+; sp_width       ; 16    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FetchDecode:FetchDecodeBuffer ;
++------------------+-------+-------------------------------------------------+
+; Parameter Name   ; Value ; Type                                            ;
++------------------+-------+-------------------------------------------------+
+; instructionwidth ; 16    ; Signed Integer                                  ;
+; immediatewidth   ; 16    ; Signed Integer                                  ;
+; inwidth          ; 16    ; Signed Integer                                  ;
+; pcwidth          ; 16    ; Signed Integer                                  ;
+; opcodewidth      ; 5     ; Signed Integer                                  ;
+; addresswidth     ; 3     ; Signed Integer                                  ;
++------------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DecodeExecute:DecodeExecuteBuffer ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; datawidth      ; 16    ; Signed Integer                                        ;
+; inwidth        ; 16    ; Signed Integer                                        ;
+; pcwidth        ; 16    ; Signed Integer                                        ;
+; addresswidth   ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ExecuteMemory:ExecuteMemory_Buffer ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; datawidth      ; 16    ; Signed Integer                                         ;
+; inwidth        ; 16    ; Signed Integer                                         ;
+; pcwidth        ; 16    ; Signed Integer                                         ;
+; addresswidth   ; 3     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MemoryWriteBack:MemoryWriteBack_Buffer ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; datawidth      ; 16    ; Signed Integer                                             ;
+; inwidth        ; 16    ; Signed Integer                                             ;
+; spwidth        ; 16    ; Signed Integer                                             ;
+; addresswidth   ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MUX_2to1:MUX_to_choose_bet_Rdst_and_Rsrc1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; width          ; 3     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; PipelinedProcessor ; test               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OR_2_inputs:ORing_to_reset_control_signals"                                         ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "OR_2_inputs:ORing_the_reset_and_flush_of_MW_buffer" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_EM_buffer" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                            ;
+; d    ; Input ; Info     ; Stuck at GND                            ;
+; e    ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_DE_buffer" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                            ;
+; e    ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Port Connectivity Checks: "OR_5:ORing_5inputs_to_flush_FD_buffer" ;
++------+-------+----------+-----------------------------------------+
+; Port ; Type  ; Severity ; Details                                 ;
++------+-------+----------+-----------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                            ;
++------+-------+----------+-----------------------------------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "MemoryWriteBack:MemoryWriteBack_Buffer" ;
++---------------+-------+----------+---------------------------------+
+; Port          ; Type  ; Severity ; Details                         ;
++---------------+-------+----------+---------------------------------+
+; write_disable ; Input ; Info     ; Stuck at GND                    ;
++---------------+-------+----------+---------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ExecuteMemory:ExecuteMemory_Buffer"                                                          ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; write_disable ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_2_out    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DecodeExecute:DecodeExecuteBuffer"                                                           ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; write_disable ; Input  ; Info     ; Stuck at GND                                                                        ;
+; jmp_out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "EPC_Unit:EPC_Unit"                                                                                 ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port                ; Type   ; Severity ; Details                                                                             ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+; pc_caused_exception ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "memory_cycle:Memory_Stage|SP_adder_unit:SP|n_BitsAdder:adder_inst"                  ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_cycle:Decode_Stage|pc_one_adder:PC_inc|n_BitsAdder:Adding"                       ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; a[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; a[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; cin      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding2" ;
++----------+--------+----------+-----------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                 ;
++----------+--------+----------+-----------------------------------------------------------------------------------------+
+; b[15..2] ; Input  ; Info     ; Stuck at GND                                                                            ;
+; b[1]     ; Input  ; Info     ; Stuck at VCC                                                                            ;
+; b[0]     ; Input  ; Info     ; Stuck at GND                                                                            ;
+; cin      ; Input  ; Info     ; Stuck at GND                                                                            ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.     ;
++----------+--------+----------+-----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler|n_BitsAdder:Adding1" ;
++------+--------+----------+---------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                     ;
++------+--------+----------+---------------------------------------------------------------------------------------------+
+; b    ; Input  ; Info     ; Stuck at GND                                                                                ;
+; cin  ; Input  ; Info     ; Stuck at VCC                                                                                ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.         ;
++------+--------+----------+---------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Exception" ;
++----------+-------+----------+---------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                 ;
++----------+-------+----------+---------------------------------------------------------+
+; a[15..1] ; Input ; Info     ; Stuck at GND                                            ;
+; a[0]     ; Input ; Info     ; Stuck at VCC                                            ;
+; b[15..2] ; Input ; Info     ; Stuck at GND                                            ;
+; b[1]     ; Input ; Info     ; Stuck at VCC                                            ;
+; b[0]     ; Input ; Info     ; Stuck at GND                                            ;
++----------+-------+----------+---------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|index_adder:Adding_index|n_BitsAdder:Adding"             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; a[1..0]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; a[15..2] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b        ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding"               ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cin  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage|MUX_4to1:MUX4to1_pc_inc_1_or_2_or_0" ;
++----------+-------+----------+------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                          ;
++----------+-------+----------+------------------------------------------------------------------+
+; a[15..1] ; Input ; Info     ; Stuck at GND                                                     ;
+; a[0]     ; Input ; Info     ; Stuck at VCC                                                     ;
+; b[15..2] ; Input ; Info     ; Stuck at GND                                                     ;
+; b[1]     ; Input ; Info     ; Stuck at VCC                                                     ;
+; b[0]     ; Input ; Info     ; Stuck at GND                                                     ;
+; c        ; Input ; Info     ; Stuck at GND                                                     ;
+; d        ; Input ; Info     ; Stuck at GND                                                     ;
++----------+-------+----------+------------------------------------------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "Integeration_Fetch:Fetch_Stage" ;
++--------------------------+-------+----------+--------------+
+; Port                     ; Type  ; Severity ; Details      ;
++--------------------------+-------+----------+--------------+
+; pc_old_value_from_decode ; Input ; Info     ; Stuck at GND ;
++--------------------------+-------+----------+--------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Mon Feb 10 17:17:00 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test -c test --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/mux4to1.vhd
+    Info (12022): Found design unit 1: MUX_4to1-Behavioral File: D:/Downloads/CPU integration/General Components/MUX4to1.vhd Line: 16
+    Info (12023): Found entity 1: MUX_4to1 File: D:/Downloads/CPU integration/General Components/MUX4to1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/mux2to1_16bits.vhd
+    Info (12022): Found design unit 1: MUX2to1_16bits-Behavioral File: D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd Line: 17
+    Info (12023): Found entity 1: MUX2to1_16bits File: D:/Downloads/CPU integration/General Components/MUX2to1_16bits.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/threeinputor.vhd
+    Info (12022): Found design unit 1: ThreeInputOR-Behavioral File: D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd Line: 15
+    Info (12023): Found entity 1: ThreeInputOR File: D:/Downloads/CPU integration/General Components/ThreeInputOR.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/or_5.vhd
+    Info (12022): Found design unit 1: OR_5-Behavioral File: D:/Downloads/CPU integration/General Components/OR_5.vhd Line: 11
+    Info (12023): Found entity 1: OR_5 File: D:/Downloads/CPU integration/General Components/OR_5.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/or_2_inputs.vhd
+    Info (12022): Found design unit 1: OR_2_inputs-Behavioral File: D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd Line: 15
+    Info (12023): Found entity 1: OR_2_inputs File: D:/Downloads/CPU integration/General Components/OR_2_inputs.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/onebitadder.vhd
+    Info (12022): Found design unit 1: oneBitAdder-oneBitAdder_Arch File: D:/Downloads/CPU integration/General Components/oneBitAdder.vhd Line: 13
+    Info (12023): Found entity 1: oneBitAdder File: D:/Downloads/CPU integration/General Components/oneBitAdder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/n_bitsadder.vhd
+    Info (12022): Found design unit 1: n_BitsAdder-n_BitsAdder_Arch File: D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd Line: 24
+    Info (12023): Found entity 1: n_BitsAdder File: D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/mux3to1_16bits.vhd
+    Info (12022): Found design unit 1: MUX3to1_16bits-MUX3to1_16bits_arch File: D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd Line: 14
+    Info (12023): Found entity 1: MUX3to1_16bits File: D:/Downloads/CPU integration/General Components/MUX3to1_16bits.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/mux3to1.vhd
+    Info (12022): Found design unit 1: MUX3to1-Behavioral File: D:/Downloads/CPU integration/General Components/MUX3to1.vhd Line: 14
+    Info (12023): Found entity 1: MUX3to1 File: D:/Downloads/CPU integration/General Components/MUX3to1.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/mux_2to1.vhd
+    Info (12022): Found design unit 1: MUX_2to1-Behavioral File: D:/Downloads/CPU integration/General Components/MUX_2to1.vhd Line: 17
+    Info (12023): Found entity 1: MUX_2to1 File: D:/Downloads/CPU integration/General Components/MUX_2to1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/general components/dff_entity.vhd
+    Info (12022): Found design unit 1: DFF_entity-DFF_Arch File: D:/Downloads/CPU integration/General Components/DFF_entity.vhd Line: 20
+    Info (12023): Found entity 1: DFF_entity File: D:/Downloads/CPU integration/General Components/DFF_entity.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/pipeline buffers/memorywriteback.vhd
+    Info (12022): Found design unit 1: MemoryWriteBack-MemoryWriteBack_Arch File: D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd Line: 71
+    Info (12023): Found entity 1: MemoryWriteBack File: D:/Downloads/CPU integration/Pipeline Buffers/MemoryWriteBack.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/pipeline buffers/fetchdecode.vhd
+    Info (12022): Found design unit 1: FetchDecode-FetchDecode_Arch File: D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd Line: 46
+    Info (12023): Found entity 1: FetchDecode File: D:/Downloads/CPU integration/Pipeline Buffers/FetchDecode.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/pipeline buffers/executememory.vhd
+    Info (12022): Found design unit 1: ExecuteMemory-ExecuteMemory_Arch File: D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd Line: 92
+    Info (12023): Found entity 1: ExecuteMemory File: D:/Downloads/CPU integration/Pipeline Buffers/ExecuteMemory.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/pipeline buffers/decodeexecute.vhd
+    Info (12022): Found design unit 1: DecodeExecute-DecodeExecute_Arch File: D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd Line: 122
+    Info (12023): Found entity 1: DecodeExecute File: D:/Downloads/CPU integration/Pipeline Buffers/DecodeExecute.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/writeback_value.vhd
+    Info (12022): Found design unit 1: WriteBack_Value-WriteBack_Value_Arch File: D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd Line: 17
+    Info (12023): Found entity 1: WriteBack_Value File: D:/Downloads/CPU integration/Single units in the integration/WriteBack_Value.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/ret_unit.vhd
+    Info (12022): Found design unit 1: RET_unit-RET_unit_Arch File: D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd Line: 16
+    Info (12023): Found entity 1: RET_unit File: D:/Downloads/CPU integration/Single units in the integration/RET_unit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/predictionunit.vhd
+    Info (12022): Found design unit 1: PredictionUnit-PredictionUnit_Arch File: D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd Line: 14
+    Info (12023): Found entity 1: PredictionUnit File: D:/Downloads/CPU integration/Single units in the integration/PredictionUnit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/hazardandforwardingunit.vhd
+    Info (12022): Found design unit 1: HazardAndForwardingUnit-HazardAndForwardingUnit_Arch File: D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd Line: 44
+    Info (12023): Found entity 1: HazardAndForwardingUnit File: D:/Downloads/CPU integration/Single units in the integration/HazardAndForwardingUnit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/flushunit.vhd
+    Info (12022): Found design unit 1: FlushUnit-FlushUnit_Arch File: D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd Line: 18
+    Info (12023): Found entity 1: FlushUnit File: D:/Downloads/CPU integration/Single units in the integration/FlushUnit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/exceptionhandlermemory.vhd
+    Info (12022): Found design unit 1: ExceptionHandlerMemory-ExceptionHandlerMemory_Arch File: D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd Line: 30
+    Info (12023): Found entity 1: ExceptionHandlerMemory File: D:/Downloads/CPU integration/Single units in the integration/ExceptionHandlerMemory.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/single units in the integration/epc_unit.vhd
+    Info (12022): Found design unit 1: EPC_Unit-EPC_Unit_design File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 17
+    Info (12023): Found entity 1: EPC_Unit File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/decode special units/reg_file.vhd
+    Info (12022): Found design unit 1: Reg_File-Arch_Reg_File File: D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd Line: 19
+    Info (12023): Found entity 1: Reg_File File: D:/Downloads/CPU integration/Stages/Decode Special Units/Reg_File.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/decode special units/pc_one_adder.vhd
+    Info (12022): Found design unit 1: pc_one_adder-pc_one_adder_arch File: D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd Line: 15
+    Info (12023): Found entity 1: pc_one_adder File: D:/Downloads/CPU integration/Stages/Decode Special Units/pc_one_adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/decode special units/decode_cycle.vhd
+    Info (12022): Found design unit 1: decode_cycle-decode_cycle_arch File: D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd Line: 45
+    Info (12023): Found entity 1: decode_cycle File: D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/decode special units/control_unit.vhd
+    Info (12022): Found design unit 1: Control_Unit-Control_Unit_arch File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 33
+    Info (12023): Found entity 1: Control_Unit File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/execute special units/exe_stage.vhd
+    Info (12022): Found design unit 1: EXE_STAGE-A_EXE_STAGE File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 45
+    Info (12023): Found entity 1: EXE_STAGE File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/execute special units/ccr.vhd
+    Info (12022): Found design unit 1: CCR-Behavioral File: D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd Line: 26
+    Info (12023): Found entity 1: CCR File: D:/Downloads/CPU integration/Stages/Execute Special Units/CCR.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/execute special units/branching.vhd
+    Info (12022): Found design unit 1: Branching-Behavioral File: D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd Line: 20
+    Info (12023): Found entity 1: Branching File: D:/Downloads/CPU integration/Stages/Execute Special Units/Branching.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/execute special units/alu.vhd
+    Info (12022): Found design unit 1: ALU-A_ALU File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 16
+    Info (12023): Found entity 1: ALU File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/pc_adder.vhd
+    Info (12022): Found design unit 1: pc_adder-PC_adder_design File: D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd Line: 15
+    Info (12023): Found entity 1: pc_adder File: D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/pc.vhd
+    Info (12022): Found design unit 1: PC-PC_design File: D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd Line: 13
+    Info (12023): Found entity 1: PC File: D:/Downloads/CPU integration/Stages/Fetch Special Units/PC.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/integeration_fetch.vhd
+    Info (12022): Found design unit 1: Integeration_Fetch-Integeration_Fetch_arch File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 44
+    Info (12023): Found entity 1: Integeration_Fetch File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/instructionmemory.vhd
+    Info (12022): Found design unit 1: InstructionMemory-InstructionMemory_Arch File: D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd Line: 20
+    Info (12023): Found entity 1: InstructionMemory File: D:/Downloads/CPU integration/Stages/Fetch Special Units/InstructionMemory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/index_adder.vhd
+    Info (12022): Found design unit 1: index_adder-index_adder_design File: D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd Line: 15
+    Info (12023): Found entity 1: index_adder File: D:/Downloads/CPU integration/Stages/Fetch Special Units/index_adder.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/hlt_unit.vhd
+    Info (12022): Found design unit 1: HLT_unit-HLT_unit_design File: D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd Line: 14
+    Info (12023): Found entity 1: HLT_unit File: D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/fetch special units/exceptionhandlerfetch.vhd
+    Info (12022): Found design unit 1: ExceptionHandlerFetch-ExceptionHandlerFetch_Arch File: D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd Line: 26
+    Info (12023): Found entity 1: ExceptionHandlerFetch File: D:/Downloads/CPU integration/Stages/Fetch Special Units/ExceptionHandlerFetch.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/memory special units/sp_adder_unit.vhd
+    Info (12022): Found design unit 1: SP_adder_unit-SP_adder_unit_arch File: D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd Line: 17
+    Info (12023): Found entity 1: SP_adder_unit File: D:/Downloads/CPU integration/Stages/Memory Special Units/SP_adder_unit.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/memory special units/memory_cycle.vhd
+    Info (12022): Found design unit 1: memory_cycle-memory_cycle_arch File: D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd Line: 28
+    Info (12023): Found entity 1: memory_cycle File: D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/memory special units/data_memory.vhd
+    Info (12022): Found design unit 1: Data_Memory-Data_Memory_arch File: D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd Line: 16
+    Info (12023): Found entity 1: Data_Memory File: D:/Downloads/CPU integration/Stages/Memory Special Units/Data_Memory.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/pipelinedprocessor.vhd
+    Info (12022): Found design unit 1: PipelinedProcessor-PipelinedProcessor_Arch File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 21
+    Info (12023): Found entity 1: PipelinedProcessor File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /downloads/cpu integration/stages/writeback special units/write_back_cycle.vhd
+    Info (12022): Found design unit 1: write_back_cycle-write_back_cycle_arch File: D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd Line: 15
+    Info (12023): Found entity 1: write_back_cycle File: D:/Downloads/CPU integration/Stages/WriteBack Special Units/write_back_cycle.vhd Line: 4
+Info (12127): Elaborating entity "PipelinedProcessor" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at PipelinedProcessor.vhd(182): object "or_out_flush_Control_unit" assigned a value but never read File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 182
+Warning (10036): Verilog HDL or VHDL warning at PipelinedProcessor.vhd(204): object "EPC_OUTPUT_ADDRESS" assigned a value but never read File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 204
+Info (12128): Elaborating entity "Integeration_Fetch" for hierarchy "Integeration_Fetch:Fetch_Stage" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 249
+Info (12128): Elaborating entity "InstructionMemory" for hierarchy "Integeration_Fetch:Fetch_Stage|InstructionMemory:InstructionMemory" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 83
+Info (12128): Elaborating entity "MUX_4to1" for hierarchy "Integeration_Fetch:Fetch_Stage|MUX_4to1:MUX4to1_pc_inc_1_or_2_or_0" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 92
+Info (12128): Elaborating entity "pc_adder" for hierarchy "Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 105
+Info (12128): Elaborating entity "n_BitsAdder" for hierarchy "Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/pc_adder.vhd Line: 17
+Info (12128): Elaborating entity "oneBitAdder" for hierarchy "Integeration_Fetch:Fetch_Stage|pc_adder:Adding_pc|n_BitsAdder:Adding|oneBitAdder:\loop1:0:fx" File: D:/Downloads/CPU integration/General Components/n_BitsAdder.vhd Line: 32
+Info (12128): Elaborating entity "PC" for hierarchy "Integeration_Fetch:Fetch_Stage|PC:PC_label" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 116
+Info (12128): Elaborating entity "OR_2_inputs" for hierarchy "Integeration_Fetch:Fetch_Stage|OR_2_inputs:TwoInputOR_for_PC_Freeze" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 125
+Info (12128): Elaborating entity "MUX_2to1" for hierarchy "Integeration_Fetch:Fetch_Stage|MUX_2to1:MUX2to1_Lastone" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 133
+Info (12128): Elaborating entity "index_adder" for hierarchy "Integeration_Fetch:Fetch_Stage|index_adder:Adding_index" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 145
+Info (12128): Elaborating entity "HLT_unit" for hierarchy "Integeration_Fetch:Fetch_Stage|HLT_unit:HLT_unit" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 157
+Warning (10631): VHDL Process Statement warning at HLT_unit.vhd(19): inferring latch(es) for signal or variable "HLT_unit_pc_disable_out", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd Line: 19
+Info (10041): Inferred latch for "HLT_unit_pc_disable_out" at HLT_unit.vhd(19) File: D:/Downloads/CPU integration/Stages/Fetch Special Units/HLT_unit.vhd Line: 19
+Info (12128): Elaborating entity "ThreeInputOR" for hierarchy "Integeration_Fetch:Fetch_Stage|ThreeInputOR:ThreeInputOR_INT_Reset_ExceptionOccurred" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 175
+Info (12128): Elaborating entity "DFF_entity" for hierarchy "Integeration_Fetch:Fetch_Stage|DFF_entity:DFF" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 183
+Info (12128): Elaborating entity "ExceptionHandlerFetch" for hierarchy "Integeration_Fetch:Fetch_Stage|ExceptionHandlerFetch:Exception_handler" File: D:/Downloads/CPU integration/Stages/Fetch Special Units/Integeration_Fetch.vhd Line: 258
+Info (12128): Elaborating entity "decode_cycle" for hierarchy "decode_cycle:Decode_Stage" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 274
+Info (12128): Elaborating entity "Control_Unit" for hierarchy "decode_cycle:Decode_Stage|Control_Unit:CU" File: D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd Line: 107
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "Flag_Enable", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "OutPort_Enable", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "RegWrite", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "Address", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "INT_sig", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "MemRead", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "MemWrite", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "MTR", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "SP_sig", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "FR", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "Write_Data_sel", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "RET_sig", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "JZ", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "JN", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "JC", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "ALU_sel", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "JMP_branch", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "UC", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "RdRs_sel", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "Rsrc1_Rscr2_sel", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Warning (10631): VHDL Process Statement warning at Control_Unit.vhd(35): inferring latch(es) for signal or variable "PC_disable", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "PC_disable" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "Rsrc1_Rscr2_sel" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "RdRs_sel" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "UC" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "JMP_branch" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "ALU_sel[0]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "ALU_sel[1]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "ALU_sel[2]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "JC" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "JN" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "JZ" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "RET_sig" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "Write_Data_sel" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "FR" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "SP_sig[0]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "SP_sig[1]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "MTR[0]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "MTR[1]" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "MemWrite" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "MemRead" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "INT_sig" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "Address" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "RegWrite" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "OutPort_Enable" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (10041): Inferred latch for "Flag_Enable" at Control_Unit.vhd(35) File: D:/Downloads/CPU integration/Stages/Decode Special Units/Control_Unit.vhd Line: 35
+Info (12128): Elaborating entity "Reg_File" for hierarchy "decode_cycle:Decode_Stage|Reg_File:RF" File: D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd Line: 109
+Info (12128): Elaborating entity "pc_one_adder" for hierarchy "decode_cycle:Decode_Stage|pc_one_adder:PC_inc" File: D:/Downloads/CPU integration/Stages/Decode Special Units/decode_cycle.vhd Line: 110
+Info (12128): Elaborating entity "EXE_STAGE" for hierarchy "EXE_STAGE:Execute_Stage" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 311
+Info (12128): Elaborating entity "MUX2to1_16bits" for hierarchy "EXE_STAGE:Execute_Stage|MUX2to1_16bits:MUX_EXE1" File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 124
+Info (12128): Elaborating entity "MUX3to1" for hierarchy "EXE_STAGE:Execute_Stage|MUX3to1:MUX_EXE3" File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 127
+Info (12128): Elaborating entity "ALU" for hierarchy "EXE_STAGE:Execute_Stage|ALU:ALUU" File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 130
+Info (10041): Inferred latch for "prev_CCR[2]" at ALU.vhd(67) File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 67
+Info (10041): Inferred latch for "prev_CCR[1]" at ALU.vhd(63) File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 63
+Info (10041): Inferred latch for "prev_CCR[0]" at ALU.vhd(58) File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 58
+Info (10041): Inferred latch for "RES_C[16]" at ALU.vhd(50) File: D:/Downloads/CPU integration/Stages/Execute Special Units/ALU.vhd Line: 50
+Info (12128): Elaborating entity "CCR" for hierarchy "EXE_STAGE:Execute_Stage|CCR:CCRU" File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 132
+Info (12128): Elaborating entity "Branching" for hierarchy "EXE_STAGE:Execute_Stage|Branching:BU" File: D:/Downloads/CPU integration/Stages/Execute Special Units/EXE_STAGE.vhd Line: 135
+Info (12128): Elaborating entity "memory_cycle" for hierarchy "memory_cycle:Memory_Stage" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 345
+Info (12128): Elaborating entity "Data_Memory" for hierarchy "memory_cycle:Memory_Stage|Data_Memory:DM" File: D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd Line: 87
+Info (12128): Elaborating entity "MUX3to1_16bits" for hierarchy "memory_cycle:Memory_Stage|MUX3to1_16bits:SP_MUX" File: D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd Line: 88
+Info (12128): Elaborating entity "SP_adder_unit" for hierarchy "memory_cycle:Memory_Stage|SP_adder_unit:SP" File: D:/Downloads/CPU integration/Stages/Memory Special Units/memory_cycle.vhd Line: 89
+Info (12128): Elaborating entity "write_back_cycle" for hierarchy "write_back_cycle:WriteBack_Stage" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 368
+Info (12128): Elaborating entity "WriteBack_Value" for hierarchy "WriteBack_Value:Write_Back_Address_to_Fetch" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 386
+Info (12128): Elaborating entity "RET_unit" for hierarchy "RET_unit:RET_UNIT" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 393
+Info (12128): Elaborating entity "PredictionUnit" for hierarchy "PredictionUnit:Prediction_UNIT" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 403
+Info (12128): Elaborating entity "FlushUnit" for hierarchy "FlushUnit:FLUSH_UNIT" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 411
+Info (12128): Elaborating entity "HazardAndForwardingUnit" for hierarchy "HazardAndForwardingUnit:Hazard_and_Forwarding_Unit" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 425
+Info (12128): Elaborating entity "ExceptionHandlerMemory" for hierarchy "ExceptionHandlerMemory:Exception_Handler_Memory_Unit" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 445
+Info (12128): Elaborating entity "EPC_Unit" for hierarchy "EPC_Unit:EPC_Unit" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 462
+Warning (10631): VHDL Process Statement warning at EPC_Unit.vhd(22): inferring latch(es) for signal or variable "PC_caused_exception", which holds its previous value in one or more paths through the process File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[0]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[1]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[2]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[3]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[4]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[5]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[6]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[7]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[8]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[9]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[10]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[11]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[12]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[13]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[14]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (10041): Inferred latch for "PC_caused_exception[15]" at EPC_Unit.vhd(22) File: D:/Downloads/CPU integration/Single units in the integration/EPC_Unit.vhd Line: 22
+Info (12128): Elaborating entity "FetchDecode" for hierarchy "FetchDecode:FetchDecodeBuffer" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 481
+Info (12128): Elaborating entity "DecodeExecute" for hierarchy "DecodeExecute:DecodeExecuteBuffer" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 502
+Info (12128): Elaborating entity "ExecuteMemory" for hierarchy "ExecuteMemory:ExecuteMemory_Buffer" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 570
+Info (12128): Elaborating entity "MemoryWriteBack" for hierarchy "MemoryWriteBack:MemoryWriteBack_Buffer" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 634
+Info (12128): Elaborating entity "OR_5" for hierarchy "OR_5:ORing_5inputs_to_flush_FD_buffer" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 690
+Info (12128): Elaborating entity "MUX_2to1" for hierarchy "MUX_2to1:MUX_to_choose_bet_Rdst_and_Rsrc1" File: D:/Downloads/CPU integration/PipelinedProcessor.vhd Line: 746
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 26 warnings
+    Info: Peak virtual memory: 5007 megabytes
+    Info: Processing ended: Mon Feb 10 17:17:11 2025
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:19
+
+
